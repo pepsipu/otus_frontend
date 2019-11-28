@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReCAPTCHA from "react-google-recaptcha";
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Home from "./components/Home";
+import Images from "./components/Images";
+import APIStatus from "./components/APIStatus";
+import Competitors from "./components/Competitors";
+import Download from "./components/Download";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+window.clientCaptcha = "6LeBMcIUAAAAAJ3dmdJUgO5J7Xg_2sZTYTibsUba";
+window.captcha = React.createRef();
+window.otus_host = "http://127.0.0.1:8000";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+let frame = document.getElementById("frame");
+document.getElementById("home-tab").onclick = () => ReactDOM.render(<Home/>, frame);
+document.getElementById("images-tab").onclick = () => ReactDOM.render(<Images/>, frame);
+document.getElementById("download-tab").onclick = () => ReactDOM.render(<Download/>, frame);
+document.getElementById("scoreboards-tab").onclick = () => ReactDOM.render(<Competitors/>, frame);
+
+ReactDOM.render(<APIStatus/>, document.getElementById("api-status"));
+ReactDOM.render(<Home/>, frame);

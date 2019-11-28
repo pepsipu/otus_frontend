@@ -1,13 +1,119 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 20px;
+  margin-top: 100px;
+  font-family: 'IBM Plex Mono', monospace !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.nav, #content {
+  color: black;
+  text-align: center;
+  background: white;
+  margin: 0 auto;
+  width: 50%;
+  padding: 20px;
+}
+.nav-ele {
+  padding: 15px;
+}
+
+.image-search, .make-image, .image-delete {
+  display: flex;
+  justify-content: right;
+  flex-direction: row-reverse;
+}
+
+.competitor {
+  display: flex;
+  justify-content: left;
+}
+
+.titles {
+  text-align: center !important;
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  background: black;
+}
+
+input {
+  border-color: black;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+#image-search-bar {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 90px;
+}
+*:focus {
+  outline: none;
+}
+
+textarea {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9pt;
+  border-color: black;
+  border-width: 2px;
+  resize: none;
+  width: 40%;
+  height: 100px;
+}
+
+.clicky {
+  border: none;
+  font-family: 'IBM Plex Mono', monospace;
+  background: black;
+  color: white;
+}
+
+.meta-image {
+  display: flex;
+}
+
+.image {
+  border-color: black;
+  border-style: double;
+  border-width: 4px;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+#image-name {
+  text-align: center;
+}
+
+.vuln-data {
+  width: 25%;
+}
+
+#api-status {
+  position: absolute;
+  padding-top: 0;
+  right: 25%;
+}
+
+.api-online, .api-offline {
+  display: inline-block;
+  margin-top: -2px;
+  margin-right: 10px;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.api-online {
+  background: #51cf66;
+}
+
+.api-offline {
+  background: #fa5252;
+}
+
+.competitor-search {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
 }
