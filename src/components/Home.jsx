@@ -23,7 +23,7 @@ export default class Home extends Component{
             </ul>
             <p>These three components make up the engine.</p>
             <h3>Who made it?</h3>
-            <p>That's me, Sammy Hajhamid! I'm a freshman at Troy High School and I made the engine because many people on the cyber patriot Subreddit and Discord did not have engines they could use (Troy has an engine, but it's in Python and is really limited).</p>
+            <p>That's me, Sammy Hajhamid! I'm a freshman at Troy High School and I made the engine because many people on the cyber patriot Subreddit and Discord did not have engines they could use.</p>
             <br/>
             <p>This is an open source project. The engine isn't secure, which needs some a bit of fixing from my crypto people! <b>There are bound to be bugs, so please submit a GitHub issue if you find one.</b> Forks of the project are encouraged and are appreciated!</p>
         </div>

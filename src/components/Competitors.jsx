@@ -11,6 +11,7 @@ export default class Home extends Component {
     getCompetitors = () => {
         axios.get(window.otus_host + "/get-competitors/" + document.getElementById("image-scoreboards").value).then(res => {
             this.setState({competitors: res.data.competitors});
+            console.log(this)
         })
     };
 

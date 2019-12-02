@@ -25,7 +25,7 @@ export default class Images extends Component {
                 </div>
                 <br/>
                 {this.state.images.map((image, index) => {
-                    return <div key={image.name} className="image">
+                    return <div key={index} className="image">
                         <div style={{display: "flex"}}>
                             <h2>{image.name}</h2>
                             <button className="clicky" style={{margin: "auto", marginRight: "20px"}} onClick={() => {
